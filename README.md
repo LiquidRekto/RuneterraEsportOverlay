@@ -4,8 +4,8 @@
 
 # Releases
 
-For those who don't really want to build from the source, you can try our released versions.
-*Coming soon in some time in the future*
+For those who don't really want to build from the source, go to [this section](https://github.com/LiquidRekto/RuneterraEsportOverlay/releases/tag/0.1.0)
+
 
 # Build
 > NOTE: If you don't have [Node.js](https://nodejs.org/) installed, make sure to install it before proceed!
