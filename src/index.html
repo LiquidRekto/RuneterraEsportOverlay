@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="nav-bar">
+      <label> <b> Runeterra Tournament Overlay Editor (BETA PREVIEW) </b> </label>
+      <button class="nav-btn" id="btn-exit"> x </button>
+      <button class="nav-btn" id="btn-minimize"> - </button>
+    </div>
+    <canvas id="overlay-canvas" width=1920 height=1080>
+    </canvas> </br>
+    
+
+    <!-- PANEL SECTION -->
+    <div class="big-panel">
+      <div class="buttons-panel">
+        <button class="panel-btn" name="general"> GENERAL </button>
+        <button class="panel-btn" name="decks"> DECKS </button>
+        <button class="panel-btn" name="personalization"> PERSONALIZATION </button>
+        <button class="panel-btn" name="export"> EXPORT </button>
+        <button class="panel-btn" name="about"> ABOUT </button>
+      </div>
+      <div class="content-panel">
+        <div style="display:none" id="section-general">
+          <label> Player 1 Name: </label>
+          <input class="def-inp" id="field-player1name" type="text"/> </br>
+          <label> Player 2 Name: </label>
+          <input class="def-inp" id="field-player2name" type="text"/> </br>
+          <label> Player 1 Score: </label>
+          <input class="def-inp" id="field-player1score" type="num"/> </br>
+          <label> Player 2 Score: </label>
+          <input class="def-inp" id="field-player2score" type="num"/> </br>
+          <label> Game Number: </label>
+          <input class="def-inp" id="field-gamenumber" type="num"/>
+          <select name="lang" id="lang-choice">
+             <option value="en_us">EN</option>
+             <option value="vi_vn">VN</option>
+          </select>
+          </br>
+          <label> Tournament Logo: </label>
+          <button id="btn-logoimport"> Import picture... </button>
+          <label id="logo-source"> </label>
+        </div>
+        <div style="display:none; text-align:left;" id="section-decks">
+          <p class="decks-title"> <b> LOWER DECKS SECTION </b>  </p> 
+          <!-- DECK BLOCK -->
+          <label> Deck 1: </label>
+          <input class="def-inp short" id="field-deck1-lower-reg1" type="text"/>
+          <input class="def-inp short" id="field-deck1-lower-reg2" type="text"/>
+          <input class="decks-radio" name="deck1-state-lower" value="normal" type="radio" />
+          <label> Available </label>  
+          <input class="decks-radio" name="deck1-state-lower" value="selected" type="radio" />
+          <label> Selected </label>  
+          <input class="decks-radio" name="deck1-state-lower" value="crossed" type="radio" />
+          <label> Crossed-out </label> </br> 
+          <!--  -->
+
+          <!-- DECK BLOCK -->
+          <label> Deck 2: </label>
+          <input class="def-inp short" id="field-deck2-lower-reg1" type="text"/>
+          <input class="def-inp short" id="field-deck2-lower-reg2" type="text"/>
+          <input class="decks-radio" name="deck2-state-lower" value="normal" type="radio" />
+          <label> Available </label>  
+          <input class="decks-radio" name="deck2-state-lower" value="selected" type="radio" />
+          <label> Selected </label>  
+          <input class="decks-radio" name="deck2-state-lower" value="crossed" type="radio" />
+          <label> Crossed-out </label>  </br>
+          <!--  -->
+
+          <!-- DECK BLOCK -->
+          <label> Deck 3: </label>
+          <input class="def-inp short" id="field-deck3-lower-reg1" type="text"/>
+          <input class="def-inp short" id="field-deck3-lower-reg2" type="text"/>
+          <input class="decks-radio" name="deck3-state-lower" value="normal" type="radio" />
+          <label> Available </label>  
+          <input class="decks-radio" name="deck3-state-lower" value="selected" type="radio" />
+          <label> Selected </label>  
+          <input class="decks-radio" name="deck3-state-lower" value="crossed" type="radio" />
+          <label> Crossed-out </label> </br>
+          <!--  -->
+          <p class="decks-title"> <b> UPPER DECKS SECTION </b>  </p> 
+          <!-- DECK BLOCK -->
+          <label> Deck 1: </label>
+          <input class="def-inp short" id="field-deck1-upper-reg1" type="text"/>
+          <input class="def-inp short" id="field-deck1-upper-reg2" type="text"/>
+          <input class="decks-radio" name="deck1-state-upper" value="normal" type="radio" />
+          <label> Available </label>  
+          <input class="decks-radio" name="deck1-state-upper" value="selected" type="radio" />
+          <label> Selected </label>  
+          <input class="decks-radio" name="deck1-state-upper" value="crossed" type="radio" />
+          <label> Crossed-out </label> </br> 
+          <!--  -->
+
+          <!-- DECK BLOCK -->
+          <label> Deck 2: </label>
+          <input class="def-inp short" id="field-deck2-upper-reg1" type="text"/>
+          <input class="def-inp short" id="field-deck2-upper-reg2" type="text"/>
+          <input class="decks-radio" name="deck2-state-upper" value="normal" type="radio" />
+          <label> Available </label>  
+          <input class="decks-radio" name="deck2-state-upper" value="selected" type="radio" />
+          <label> Selected </label>  
+          <input class="decks-radio" name="deck2-state-upper" value="crossed" type="radio" />
+          <label> Crossed-out </label>  </br>
+          <!--  -->
+
+          <!-- DECK BLOCK -->
+          <label> Deck 3: </label>
+          <input class="def-inp short" id="field-deck3-upper-reg1" type="text"/>
+          <input class="def-inp short" id="field-deck3-upper-reg2" type="text"/>
+          <input class="decks-radio" name="deck3-state-upper" value="normal" type="radio" />
+          <label> Available </label>  
+          <input class="decks-radio" name="deck3-state-upper" value="selected" type="radio" />
+          <label> Selected </label>  
+          <input class="decks-radio" name="deck3-state-upper" value="crossed" type="radio" />
+          <label> Crossed-out </label> </br>
+          <!--  -->
+        </div>
+        <div style="display:none" id="section-personalization">
+        </div>
+        <div style="display:none" id="section-export">
+          <label> File name: </label>
+          <input class="def-inp" id="field-filename" type="text"/> </br>
+          <label> Output directory: </label>
+          <input class="def-inp" readonly="readonly" id="field-directory" type="text"/>
+          <button id="btn-opendir"> ... </button>  </br>
+          <button id="overlay-refresh"> REFRESH </button>
+          <button id="overlay-export"> EXPORT </button> </br>
+        </div>
+        <div style="display:none" id="section-about">
+          <p> Make with luv en passiOn from LiquidRekto </p>
+          <p> 2022-ish ~ </p>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="socket.io.js"> </script>
+    <script src="engine/canvasBeizer.js"> </script>
+    <script src="engine/canvasFonts.js"> </script>
+    <script src="engine/draw.js"> </script>
+    <script src="renderer.js"> </script>
+  </body>
+</html>

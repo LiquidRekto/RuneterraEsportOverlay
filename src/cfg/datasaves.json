@@ -1,0 +1,50 @@
+{
+    "general": {
+        "field_player1name": "",
+        "field_player2name": "",
+        "field_player1score": "",
+        "field_player2score": "",
+        "field_gamenumber": "",
+        "url_tournamentlogo": ""
+    },
+    "exports": {
+        "field_filename": "",
+        "field_outputdir": ""
+    },
+    "decks": {
+        "lower": {
+            "deck1": {
+                "region1": "",
+                "region2": "",
+                "state": ""
+            },
+            "deck2": {
+                "region1": "",
+                "region2": "",
+                "state": ""
+            },
+            "deck3": {
+                "region1": "",
+                "region2": "",
+                "state": ""
+            }
+        },
+        "upper": {
+            "deck1": {
+                "region1": "",
+                "region2": "",
+                "state": ""
+            },
+            "deck2": {
+                "region1": "",
+                "region2": "",
+                "state": ""
+            },
+            "deck3": {
+                "region1": "",
+                "region2": "",
+                "state": ""
+            }
+        }
+    }
+}

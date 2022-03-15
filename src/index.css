@@ -1,0 +1,133 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0px;
+  width: 100%;
+  background-color: #202020;
+  text-align: center;
+  color: white;
+}
+
+#overlay-canvas {
+  width: 864px;
+  height: 486px;
+  display: inline;
+  border: 1px solid white;
+  background: url('assets/test.png');
+  margin-top: 20px;
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover, button:focus {
+  outline: 0;
+}
+
+.panel-btn {
+  box-sizing: border-box;
+  border: none;
+  background-color: red;
+  padding: 8px;
+  font-family: "BeaufortforLOLBold";
+  color: white;
+  float: left;
+  font-size: 12px;
+}
+
+.panel-btn:hover {
+  background-color: #ff2222;
+}
+
+.panel-btn:focus {
+  background-color: #ff7700;
+}
+
+.big-panel {
+  display: inline-block;
+  width: 90%;
+}
+
+input {
+  width: 60%;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.def-inp {
+  box-sizing: border-box;
+  border: 1px solid rgb(255,255,255,0.6);
+  background-color: #202020;
+  color: white;
+}
+
+#field-directory {
+  cursor: not-allowed;
+  background-color: #444444;
+  color: #bbbbbb;
+}
+
+#nav-bar {
+  height: 30px;
+  background-color: #444444;
+  text-align: left;
+  -webkit-app-region: drag;
+}
+
+#nav-bar > button {
+  -webkit-app-region: no-drag;
+}
+
+#nav-bar > label {
+  display:inline-block;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+
+.nav-btn {
+  box-sizing: border-box;
+  background-color: transparent;
+  color: white;
+  float: right;
+  height: 100%;
+  font-size: 20px;
+  width: 35px;
+  transition-duration: 0.5s;
+  border: none;
+  
+}
+
+.nav-btn > button {
+  -webkit-app-region: no-drag;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.buttons-panel {
+  width: 100%;
+  display: block;
+  height: 30px;
+}
+
+.content-panel {
+  width: 100%;
+  border: 1px solid red;
+  height: 180px;
+  overflow: auto;
+  padding: 10px;
+  text-align: left;
+}
+
+.decks-radio {
+  width: auto;
+}
+
+.short {
+  width: 10%;
+}
