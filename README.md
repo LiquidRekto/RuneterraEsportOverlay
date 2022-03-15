@@ -16,7 +16,7 @@ After downloading the project source, go to the project directory and run `npm i
 
 To start building the project, open the Command Prompt then go to the project folder. You can do one of those things:
 - Run `npm start` to preview the app
-- Run `npm make` to start building the app
+- Run `npm run make` to start building the app
 
 The output application (after running `npm make`) will be stored in the `out` folder in the project directory.
 
